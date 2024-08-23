@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e4f4fd;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  margin-top: 10%;
+  width: 1000px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.section1 {
+  width: 50%;
+  padding: 50px;
+  font-weight: 500;
+  gap: 25px;
+  color: #4e6e7e;
+}
+.section1 button {
+  margin-left: auto;
+}
+.flex {
+  display: flex;
+}
+.black {
+  color: black;
+}
+.column {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+}
+.input-container {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  border: 1px solid #a0b4c1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-icon {
+  background-color: #e3f2fd;
+  padding: 10px;
+  color: #2f4858;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #a0b4c1;
+}
+
+input[type="text"] {
+  border: none;
+  padding: 10px;
+  outline: none;
+  flex: 1;
+  font-size: 1em;
+}
+
+input[type="text"]::placeholder {
+  color: #b0c4cd;
+}
+
+.input {
+  margin-top: 25px;
+}
+
+.input2 {
+  width: 45%;
+}
+.input-container2 {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  border: 1px solid #a0b4c1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-container2 input {
+  width: 50px;
+}
+
+.input-icon2 {
+  background-color: #e3f2fd;
+  padding: 10px;
+  color: #2f4858;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #a0b4c1;
+}
+
+.title {
+  margin-top: 25px;
+}
+
+.title h1 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+/* Checkbox containerini tuzish */
+.checkbox-container {
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-top: 10px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  border: 1px solid #4e6e7e;
+  border-radius: 5px;
+  color: black;
+}
+
+/* Oddiy checkboxni yashirish */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom checkboxni yaratish */
+.checkmark {
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Checkbox tanlanganda (check) ko'rinadigan belgini qo'shish */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Checkbox ichiga belgi qo'shish */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Checkbox belgisini dizayni */
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+#clear{
+  border: none;
+  background: inherit;
+  font-size: medium;
+}
+
+#clear:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.main-btn {
+  margin-top: 25px;
+  width: 350px;
+  height: 50px;
+  border-radius: 50px;
+  background: #d8db2f;
+  border: none;
+  font-weight: 700;
+  align-items: center;
+}
+
+.size {
+  width: 30px;
+}
+
+.section2 {
+  background: #133041;
+  width: 50%;
+  padding: 50px;
+  gap: 25px;
+  border-bottom-left-radius: 80px;
+  color: white;
+
+}
+
+.container2{
+  text-align: center;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.hidden{
+    opacity: 0;
+    margin-top: -400px;
+}
+
+.container2 img{
+    margin-top: 50px;
+}
+
+.container2 h1{
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container2 h3{
+    margin-top: 30px;
+    font-weight: 500;
+    font-size:20px;
+}
+
+.container3{
+
+}
+.container3 h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container3 h3{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calculet{
+    height: 300px;
+    padding: 32px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background: #1e2338;
+    gap: 25px;
+    border-top: 5px solid yellow;
+}
+
+.calculet h2{
+    font-weight: 400;
+}
+
+.calculet h1{
+    font-size: 56px;
+    color: #D8DB2F;
+}
+
+#btn:hover{
+  background-color: rgb(237, 237, 156);
+}
+
+.color{
+  color: #9ABED5;
+  margin-top: 20px;
+}
+
+hr{
+  margin-top: 20px;
+  color: #9ABED540;
+}
+

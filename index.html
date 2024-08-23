@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="section1">
+        <div class="flex">
+          <h1 class="black">Mortgage Calculator</h1>
+          <button id="clear" type="button">Clear</button>
+        </div>
+        <div class="input">
+          <label for="mainAmout"> Mortgage Amount</label>
+          <div class="input-container">
+            <span class="input-icon">£</span>
+            <input
+              required
+              id="mainAmout"
+              type="text"
+              placeholder="Enter amount"
+            />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input2">
+            <label for="year"> Mortgage Term</label>
+            <div class="input-container2">
+              <input required id="year" type="text" placeholder="Enter year" />
+              <span class="input-icon2">years</span>
+            </div>
+          </div>
+          <div class="input2">
+            <label for="present"> Interest present</label>
+            <div class="input-container2">
+              <input
+                required
+                id="present"
+                type="text"
+                placeholder="Enter amount"
+              />
+              <span class="input-icon2">%</span>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <h1>Mortgage Type</h1>
+          <label class="checkbox-container">
+            Repayment
+            <input value="a" name="option" id="optiona" type="radio" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">
+            Interest Only
+            <input value="b" name="option" id="optionb" type="radio" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <button type="submit" id="btn" class="main-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"
+            />
+          </svg>
+        </button>
+      </form>
+      <section class="section2">
+        <div id="section2" class="container2">
+          <img src="./images/Layer_1.svg" alt="" />
+          <h1>Results shown here</h1>
+          <h3>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </h3>
+        </div>
+        <div id="section3" class="container3 hidden">
+          <h1>Your results</h1>
+          <h3>
+            <p>
+              Your results are shown below based on the information you
+              provided. To adjust the results, edit the form and click
+              “calculate repayments” again.
+            </p>
+          </h3>
+
+          <div class="calculet">
+            <h2 class="color">Your monthly repayments</h2>
+            <div class="flex">
+              <h1>£</h1>
+              <h1 id="amout"></h1>
+            </div>
+            <hr />
+            <h3 class="color">Total you'll repay over the term</h3>
+            <div class="flex">
+              <h3>£</h3>
+              <h3 id="total"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
